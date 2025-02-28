@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        }
+    </script>
+</head>
+<body class="bg-black text-white flex flex-col min-h-screen">
+    <nav class="bg-gray-900 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="md:hidden">
+                <button class="text-gray-400 hover:text-white" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a class="text-gray-400 hover:text-white" href="index.html">Home</a>
+                <a class="text-gray-400 hover:text-white" href="resume.html">Resume</a>
+                <a class="text-gray-400 hover:text-white" href="blogs.html">Blogs</a>
+                <a class="text-gray-400 hover:text-white" href="recent-work.html">Recent Work</a>
+                <a class="text-gray-400 hover:text-white" href="get-in-touch.html">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hidden flex flex-col mt-4 md:hidden" id="mobile-menu">
+            <a class="text-gray-400 hover:text-white block py-2" href="index.html">Home</a>
+            <a class="text-gray-400 hover:text-white block py-2" href="resume.html">Resume</a>
+            <a class="text-gray-400 hover:text-white block py-2" href="blogs.html">Blogs</a>
+            <a class="text-gray-400 hover:text-white block py-2" href="recent-work.html">Recent Work</a>
+            <a class="text-gray-400 hover:text-white block py-2" href="get-in-touch.html">Get In Touch</a>
+        </div>
+    </nav>
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-center flex-grow p-8">
+        <div class="text-center md:w-1/3">
+            <h1 class="text-4xl font-bold mb-4">Safa Fatima Aman</h1>
+            <p class="text-gray-400 mb-6">I am IT Undergrate and an enthusiastic person, I am passionate about creativity | HackPrix Organizer </p>
+            <a href="https://linktr.ee/SafaFatimaAman" class="bg-green-600 text-white py-3 px-6 rounded-full hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">Let's Get Started</a>
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0">
+            <img src="Safa image.jpg" alt="Portrait of a smiling person" class="rounded-full mx-auto" width="350" height="350"/>
+        </div>
+    </div>
+    <div class="container mx-auto text-center mt-8">
+        <p class="text-gray-400 mb-4">Working with</p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="https://hackprix.tech" target="_blank" class="bg-gray-800 p-4 rounded-lg">
+                <img src="HackPrix S2 with white BG.png" alt="ClickUp logo" class="mx-auto" width="100" height="50"/>
+            </a>
+        </div>
+    </div>
+    <footer class="bg-gray-900 p-4 mt-8">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-6">
+                <a href="https://www.linkedin.com/in/safa-aman-1893872b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/its_me.safaa/" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/safaaman12?s=11" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

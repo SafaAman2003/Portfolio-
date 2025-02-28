@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Blogs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("mobile-menu");
+            if (menu.classList.contains("hidden")) {
+                menu.classList.remove("hidden");
+            } else {
+                menu.classList.add("hidden");
+            }
+        }
+    </script>
+</head>
+<body class="bg-black text-white">
+    <nav class="bg-gray-900 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="md:hidden">
+                <button class="text-gray-400 hover:text-white" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a class="text-gray-400 hover:text-white" href="index.html">Home</a>
+                <a class="text-gray-400 hover:text-white" href="resume.html">Resume</a>
+                <a class="text-gray-400 hover:text-white" href="blogs.html">Blogs</a>
+                <a class="text-gray-400 hover:text-white" href="recent-work.html">Recent work</a>
+                <a class="text-gray-400 hover:text-white" href="get-in-touch.html">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hidden md:hidden flex-col mt-4" id="mobile-menu">
+            <a class="text-gray-400 hover:text-white block py-2" href="index.html">Home</a>
+            <a class="text-gray-400 hover:text-white block py-2" href="resume.html">Resume</a>
+            <a class="text-gray-400 hover:text-white block py-2" href="blogs.html">Blogs</a>
+            <a class="text-gray-400 hover:text-white block py-2" href="recent-work.html">Recent work</a>
+            <a class="text-gray-400 hover:text-white block py-2" href="get-in-touch.html">Get In Touch</a>
+        </div>
+    </nav>
+    <div class="container mx-auto p-4">
+        <h1 class="text-6xl text-center fon mb-6">Blogs</h1>
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-2">Latest Posts</h2>
+            <div class="space-y-4">
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold">To Be Declared</h3>
+                    <p class="text-gray-400">...</p>
+                    <a class="text-green-500 hover:underline" href="#">Read more</a>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+   <footer class="bg-gray-900 p-4 text-center fixed bottom-0 w-full">
+        <div class="container mx-auto">
+            <div class="flex justify-center space-x-6">
+                <a href="https://www.linkedin.com/in/safa-aman-1893872b5" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/its_me.safaa/" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/safaaman12?s=11" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+</html>
